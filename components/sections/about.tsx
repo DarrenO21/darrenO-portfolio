@@ -5,6 +5,7 @@ import { BlurReveal } from "@/components/blur-reveal";
 import { useLanguage } from "@/context/language-context";
 import { useState } from "react";
 import { AboutModal } from "@/components/about-modal";
+import { HangingProfile } from "@/components/hanging-profile";
 
 export default function About() {
     const { content } = useLanguage();
@@ -25,9 +26,15 @@ export default function About() {
                             </BlurReveal>
 
                             <BlurReveal>
-                                <h2 className="title">
+                                <h2 className="title relative z-10">
                                     {content.about.title}
                                 </h2>
+                            </BlurReveal>
+
+                            <BlurReveal>
+                                <div className="mt-8 hidden xl:block">
+                                    <HangingProfile />
+                                </div>
                             </BlurReveal>
 
                         </div>
@@ -51,16 +58,16 @@ export default function About() {
 
                             <BlurReveal>
                                 <>
-                                    <button 
+                                    <button
                                         onClick={() => setIsOpen(true)}
                                         className="group relative inline-flex cursor-pointer items-center gap-2 text-xl md:text-2xl font-medium py-2"
                                     >
                                         <span className="relative z-10 border-b-2 border-foreground/30 pb-1 group-hover:border-foreground transition-all duration-300">
                                             {content.about.cta}
                                         </span>
-                                        <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-2" />
+                                        <ArrowRight className="w-6 h-6" />
                                     </button>
-                                    
+
                                     <AboutModal open={isOpen} onOpenChange={setIsOpen} />
                                 </>
                             </BlurReveal>

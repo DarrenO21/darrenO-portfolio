@@ -52,6 +52,12 @@ export default function Roadmap() {
                             {content.roadmap.title}
                         </h2>
                     </BlurReveal>
+
+                    <BlurReveal>
+                        <p className="text-lg mt-3 max-w-xl italic font-medium tracking-tight text-foreground/60">
+                            {content.roadmap.description}
+                        </p>
+                    </BlurReveal>
                 </div>
 
                 <div className="relative">
@@ -101,10 +107,10 @@ const TimelineNode = ({ item, index, isEven }: { item: any, index: number, isEve
                     )}>
 
                         <span className={cn(
-                            "text-xs font-mono tracking-widest text-muted-foreground uppercase flex mb-4",
+                            "max-sm:hidden text-xs font-mono tracking-widest text-muted-foreground uppercase flex mb-4",
                             isEven ? "md:justify-end" : "md:justify-start"
                         )}>
-                            PHASE {item.id}
+                            {item.id}
                         </span>
 
                         <div className="flex flex-col gap-3 relative z-10">

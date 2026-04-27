@@ -26,10 +26,15 @@ export default function Contact() {
                                 {content.contact.title}
                             </h2>
                         </BlurReveal>
+                        <BlurReveal>
+                            <p className="text-lg mt-3 max-w-xl italic font-medium tracking-tight text-foreground/60">
+                                {content.contact.description}
+                            </p>
+                        </BlurReveal>
                     </div>
                 </div>
 
-                <div className="flex flex-col w-full max-w-5xl mx-auto mb-24 xl:mb-40 border-t border-border/50">
+                <div className="flex flex-col w-full max-w-5xl mx-auto mb-12 sm:mb-24 xl:mb-40 border-t border-border/50">
                     <BlurReveal>
                         <a
                             href={`mailto:${content.contact.email}`}
@@ -39,17 +44,16 @@ export default function Contact() {
                                 {content.contact.send_email}
                             </span>
                             <div className="flex items-center gap-8">
-                                <span className="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground transition-all duration-500 group-hover:text-primary group-hover:scale-[1.02] origin-left md:origin-right">
+                                <span className="text-2xl lg:text-3xl font-semibold tracking-tight text-foreground transition-all duration-500 group-hover:text-primary group-hover:scale-[1.02] origin-left md:origin-right">
                                     {content.contact.email}
                                 </span>
-                                <div className="w-16 h-16 rounded-full border border-border/50 items-center justify-center bg-background group-hover:bg-foreground group-hover:border-foreground transition-all duration-700 shrink-0 opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 hidden md:flex">
+                                <div className="w-10 h-10 rounded-full border border-border/50 items-center justify-center bg-background group-hover:bg-foreground group-hover:border-foreground transition-all duration-700 shrink-0 opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 hidden md:flex">
                                     <ArrowUpRight className="w-6 h-6 text-foreground group-hover:text-background transition-colors duration-500" />
                                 </div>
                             </div>
                         </a>
                     </BlurReveal>
                     <BlurReveal>
-
                         <a
                             href={`tel:${content.contact.phone.replace(/\s+/g, '')}`}
                             className="group flex flex-col md:flex-row md:items-center justify-between py-10 md:py-14 border-b border-border/50 transition-all duration-700 hover:px-8"
@@ -58,10 +62,10 @@ export default function Contact() {
                                 {content.contact.direct_line}
                             </span>
                             <div className="flex items-center gap-8">
-                                <span className="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground transition-all duration-500 group-hover:text-primary group-hover:scale-[1.02] origin-left md:origin-right">
+                                <span className="text-2xl lg:text-3xl font-semibold tracking-tight text-foreground transition-all duration-500 group-hover:text-primary group-hover:scale-[1.02] origin-left md:origin-right">
                                     {content.contact.phone}
                                 </span>
-                                <div className="w-16 h-16 rounded-full border border-border/50 items-center justify-center bg-background group-hover:bg-foreground group-hover:border-foreground transition-all duration-700 shrink-0 opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 hidden md:flex">
+                                <div className="w-10 h-10 rounded-full border border-border/50 items-center justify-center bg-background group-hover:bg-foreground group-hover:border-foreground transition-all duration-700 shrink-0 opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 hidden md:flex">
                                     <ArrowUpRight className="w-6 h-6 text-foreground group-hover:text-background transition-colors duration-500" />
                                 </div>
                             </div>
@@ -69,11 +73,11 @@ export default function Contact() {
                     </BlurReveal>
                 </div>
 
-                <div className="w-full flex flex-col md:flex-row items-center justify-between py-12 border-t border-border/50 gap-8 max-sm:hidden">
+                <div className="w-full flex flex-col md:flex-row items-center justify-between pb-12 xl:py-12 xl:border-t border-border/50 gap-8">
 
-                    <div className="text-sm font-mono tracking-widest text-muted-foreground uppercase flex items-center gap-4">
+                    <div className="text-sm font-mono tracking-widest text-muted-foreground uppercase flex items-center gap-4 max-xl:hidden">
                         <span>© {new Date().getFullYear()}</span>
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary/50 max-sm:hidden" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
                         <span>KINTARO. {content.contact.all_rights_reserved}</span>
                     </div>
 

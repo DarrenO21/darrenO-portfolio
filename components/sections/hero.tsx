@@ -77,9 +77,11 @@ export default function Hero() {
                 <HeroScene />
             </motion.div>
 
+            <BackgroundEffects className="md:hidden" />
+
             <motion.div
                 style={{ opacity, scale, y, filter }}
-                className="relative z-20 flex flex-col items-center text-center px-4 max-w-3xl mx-auto will-change-[opacity,transform,filter]"
+                className="relative z-20 flex flex-col items-center text-center px-4 max-w-2xl mx-auto will-change-[opacity,transform,filter]"
             >
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-[400px] bg-background/40 blur-[100px] rounded-full pointer-events-none -z-10" />
 
@@ -103,17 +105,10 @@ export default function Hero() {
 
                     <motion.h1
                         variants={fadeUp}
-                        className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold sm:font-black tracking-tighter leading-[0.95] uppercase mb-6 sm:mb-8"
+                        className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-bold sm:font-black tracking-tighter leading-[1.1] sm:leading-[0.95] uppercase mb-6 sm:mb-8"
                     >
                         {content.hero.title}
                     </motion.h1>
-
-                    <motion.p
-                        variants={fadeUp}
-                        className="sm:text-lg md:text-xl lg:text-2xl text-muted-foreground font-light max-w-2xl mb-6 sm:mb-12 flex-relaxed"
-                    >
-                        {content.hero.description}
-                    </motion.p>
 
                     <motion.div
                         variants={fadeUp}

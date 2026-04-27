@@ -92,7 +92,7 @@ function MorphBlob() {
                     uTime: { value: 0 },
                     uOpacity: { value: 0.12 },
                     uColor1: { value: new THREE.Color("#ffffff") },
-                    uColor2: { value: new THREE.Color("#888888") },
+                    uColor2: { value: new THREE.Color("#ffffff") },
                 },
                 vertexShader: `
                     varying vec3 vNormal;

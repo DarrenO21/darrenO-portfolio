@@ -100,7 +100,7 @@ export function ProjectModal({ open, onOpenChange, project }: ProjectModalProps)
                                     {project.stack.map((tech) => (
                                         <span
                                             key={tech}
-                                            className="px-4 py-1.5 rounded-full border border-border/50 bg-secondary/50 text-sm capitalize"
+                                            className="px-4 py-1.5 rounded-full border border-border/50 bg-secondary/50 text-sm"
                                         >
                                             {tech}
                                         </span>
