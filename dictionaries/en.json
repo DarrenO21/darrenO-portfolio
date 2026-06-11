@@ -16,15 +16,11 @@
         "title": "About",
         "cta": "Read Full Version"
     },
-    "stack": {
-        "title": "STACK",
-        "categories": {
-            "frontend": "Frontend Technologies",
-            "backend": "Backend Technologies",
-            "database": "Databases & ORMs",
-            "tools": "Tools & Infrastructure"
-        }
-    },
+    "stackTitle": "STACK",
+    "frontendStack": "Frontend Technologies",
+    "backendStack": "Backend Technologies",
+    "databaseStack": "Databases & ORMs",
+    "toolsStack": "Tools & Infrastructure",
     "projects": {
         "title": "PROJECTS",
         "scroll_text": "SCROLL TO EXPLORE",

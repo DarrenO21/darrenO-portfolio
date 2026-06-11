@@ -14,19 +14,19 @@ export default function Stack() {
 
     const categories = [
         {
-            title: content.stack?.categories?.frontend || "Frontend Technologies",
+            title: content.frontendStack || "Frontend Technologies",
             items: content.technologies?.frontend || [],
         },
         {
-            title: content.stack?.categories?.backend || "Backend Technologies",
+            title: content.backendStack || "Backend Technologies",
             items: content.technologies?.backend || [],
         },
         {
-            title: content.stack?.categories?.database || "Databases & ORMs",
+            title: content.databaseStack || "Databases & ORMs",
             items: content.technologies?.database || [],
         },
         {
-            title: content.stack?.categories?.tools || "Tools & Infrastructure",
+            title: content.toolsStack || "Tools & Infrastructure",
             items: content.technologies?.tools || [],
         },
     ];
@@ -41,7 +41,7 @@ export default function Stack() {
                     </BlurReveal>
 
                     <BlurReveal>
-                        <h2 className="title">{content.stack?.title || "STACK"}</h2>
+                        <h2 className="title">{content.stackTitle || "STACK"}</h2>
                     </BlurReveal>
                 </div>
 

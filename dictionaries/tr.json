@@ -16,15 +16,11 @@
         "title": "Hakkımda",
         "cta": "Tamamını Oku"
     },
-    "stack": {
-        "title": "Teknolojiler",
-        "categories": {
-            "frontend": "Frontend",
-            "backend": "Backend",
-            "database": "Databases & ORMs",
-            "tools": "Tools & Infrastructure"
-        }
-    },
+    "stackTitle": "Teknolojiler",
+    "frontendStack": "Frontend",
+    "backendStack": "Backend",
+    "databaseStack": "Databases & ORMs",
+    "toolsStack": "Tools & Infrastructure",
     "projects": {
         "title": "PROJELER",
         "scroll_text": "KEŞFETMEK İÇİN KAYDIR",
