@@ -57,7 +57,6 @@ Projemin son günlerde star ve fork alması beni mutlu etti. Aslında projeyi ta
 - **Tailwind CSS**: Hızlı ve duyarlı kullanıcı arayüzü tasarımı için yardımcı program öncelikli CSS framework'ü.
 - **TypeScript**: Tip güvenliğini sağlar ve temiz mimari ile üstün bir geliştirici deneyimi sunar.
 - **Framer Motion**: Karmaşık, fizik tabanlı kullanıcı arayüzü animasyonlarını, geçişlerini ve hareket etkileşimlerini güçlendirir.
-- **Three.js**: Etkileşimli ve hafif 3D sahneleri yerel olarak işlemek için React Three Fiber aracılığıyla entegre edilmiştir.
 - **Shadcn/UI**: Erişilebilir, güzel tasarlanmış ve özelleştirilebilir temel kullanıcı arayüzü bileşenleri sağlar.
 - **Lucide React**: Kullanıcı arayüzü navigasyonu ve eylemleri için kullanılan temiz ve tutarlı bir simge kitaplığı.
 - **Lenis**: Tüm cihazlarda ipeksi pürüzsüzlükte, yerel bir his uyandıran kaydırma deneyimi sunar.

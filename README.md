@@ -45,7 +45,6 @@ Seeing this project receive stars and forks recently has made me really happy. I
 ## <a id="features"></a> ✨ Features
 
 - **Advanced Animations**: Fluid transitions and micro-interactions with Framer Motion and Motion libraries.
-- **3D Experiences**: Deep visual elements with React Three Fiber (R3F) and Three.js integration.
 - **Physics-Based Components**: Dynamic and physics-compliant UI elements like "Hanging Profile" that respond to mouse movements.
 - **Smooth Scroll**: A modern and high-quality scrolling experience with Lenis integration.
 - **Dynamic Theme Support**: Optimized Dark and Light mode transitions with next-themes.
