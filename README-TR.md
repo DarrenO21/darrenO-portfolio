@@ -21,7 +21,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-purple?style=for-the-badge&logo=framer)
-![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
   <p>
@@ -46,7 +45,6 @@ Projemin son günlerde star ve fork alması beni mutlu etti. Aslında projeyi ta
 ## <a id="features"></a> ✨ Özellikler
 
 - **Gelişmiş Animasyonlar**: Framer Motion ve Motion kütüphaneleri ile akıcı geçişler ve mikro etkileşimler.
-- **3D Deneyimler**: React Three Fiber (R3F) ve Three.js entegrasyonu ile derin görsel öğeler.
 - **Fizik Tabanlı Bileşenler**: Fare hareketlerine tepki veren "Hanging Profile" gibi dinamik ve fizik kurallarına uygun kullanıcı arayüzü öğeleri.
 - **Pürüzsüz Kaydırma**: Lenis entegrasyonu ile modern ve yüksek kaliteli bir kaydırma deneyimi.
 - **Dinamik Tema Desteği**: next-themes ile optimize edilmiş Karanlık ve Aydınlık mod geçişleri.

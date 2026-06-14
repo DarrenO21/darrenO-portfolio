@@ -21,7 +21,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-purple?style=for-the-badge&logo=framer)
-![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
   <p>
@@ -59,7 +58,6 @@ Seeing this project receive stars and forks recently has made me really happy. I
 - **Tailwind CSS**: Utility-first CSS framework for rapid and responsive UI styling.
 - **TypeScript**: Ensures type safety and provides a superior developer experience with clean architecture.
 - **Framer Motion**: Powers the complex, physics-based UI animations, transitions, and gesture interactions.
-- **Three.js**: Integrated via React Three Fiber to render interactive and lightweight 3D scenes natively.
 - **Shadcn/UI**: Provides accessible, beautifully designed, and customizable core UI components.
 - **Lucide React**: A clean and consistent icon library used for UI navigation and actions.
 - **Lenis**: Delivers a silky-smooth, native-feeling scroll experience across all devices.
