@@ -21,11 +21,10 @@
     "backendStack": "Backend",
     "databaseStack": "Databases & ORMs",
     "toolsStack": "Tools & Infrastructure",
-    "projects": {
-        "title": "PROJELER",
-        "scroll_text": "KEŞFETMEK İÇİN KAYDIR",
-        "end_text": "SON"
-    },
+    "projectsTitle": "PROJELER",
+    "projectsScrollText": "KEŞFETMEK İÇİN KAYDIR",
+    "projectsEndText": "SON",
+    "projectsIntro": "*deneyler*, *ürünler* ve *dijital eserlerden* oluşan, **boşlukta** şekillendirilmiş bir koleksiyon.",
     "roadmap": {
         "title": "Yol Haritası"
     },

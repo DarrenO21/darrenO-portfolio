@@ -21,11 +21,10 @@
     "backendStack": "Backend Technologies",
     "databaseStack": "Databases & ORMs",
     "toolsStack": "Tools & Infrastructure",
-    "projects": {
-        "title": "PROJECTS",
-        "scroll_text": "SCROLL TO EXPLORE",
-        "end_text": "END"
-    },
+    "projectsTitle": "PROJECTS",
+    "projectsScrollText": "SCROLL TO EXPLORE",
+    "projectsEndText": "END",
+    "projectsIntro": "A collection of *experiments*, *products*, and *digital artifacts* forged in the **void**.",
     "roadmap": {
         "title": "Roadmap"
     },
