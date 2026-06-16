@@ -1,8 +1,8 @@
 {
     "about": {
-        "intro": "*Kendi projeleriyle gelişen* ve fikirleri **ürüne dönüştüren** bir geliştirici.",
-        "description": "*Web geliştirme odağında*; frontend ve backend tarafında üretim yapan, yeni teknolojileri **deneyerek öğrenen** ve kodun ***sürdürülebilir olmasına*** önem veren bir yaklaşım.",
-        "full": "Yazılımla son birkaç yıldır aktif olarak ilgileniyorum ve bu süreçte çoğunlukla kendi projelerim üzerinden ilerleyerek kendimi geliştirdim. Bir fikri alıp çalışır bir ürüne dönüştürme süreci benim en çok keyif aldığım kısım.\n\nGenel olarak web geliştirme tarafında çalışıyorum. React, Next.js, Node.js, Express ve Laravel gibi teknolojilerle hem frontend hem backend tarafında projeler geliştirdim. MongoDB ve PostgreSQL ile veri yönetimi üzerine deneyim kazandım. Ayrıca C# ve WinForms ile masaüstü uygulamaları geliştirdim, son dönemde ise Tauri (Rust) ile daha hafif ve modern desktop uygulamalar denemeye başladım.\n\nBunların yanında zaman zaman ihtiyaca göre farklı araçlarla da çalışıyorum. Örneğin FFmpeg kullanarak medya işleme tarafında projeler yaptım. Yeni teknolojileri denemeyi seviyorum ve genelde bir şeyi en iyi öğrenme yolunun doğrudan kullanmak olduğunu düşünüyorum.\n\nProjelerimde sadece \"çalışması\" yeterli gelmiyor; mümkün olduğunca temiz, anlaşılır ve sürdürülebilir olmasına dikkat ediyorum. Bir problemle karşılaştığımda hızlıca geçmek yerine biraz kurcalayıp mantığını çözmeye çalışıyorum.\n\nŞu an hedefim, daha büyük ve gerçek dünya problemlerine dokunan projelerde yer almak ve kendimi özellikle backend ve sistem tasarımı tarafında daha da geliştirmek."
+        "intro": "**Temiz ve sürdürülebilir sistemler** kurmaya odaklanan bir *Full Stack Geliştiriciyim*.",
+        "description": "Sürekli **yeni şeyler öğrenmeyi** seven, öğrendiklerini pratiğe dökmeye çalışan biriyim. *Web* ve *masaüstü* uygulamaları geliştiriyorum. Basit, **pratik** ve **sürdürülebilir** araçlarla uğraşmayı seviyorum.",
+        "full": "Selam, ben **Kintaro**; gerçek adım **Mustafa**. Son birkaç yıldır aktif olarak yazılımla uğraşıyorum ve bu süreçte kendimi büyük ölçüde kendi projelerim ve denemelerim üzerinden geliştirdim.\n\nAğırlıklı olarak web geliştirme tarafında çalışıyorum; *React*, *Next.js*, *Laravel*, *TailwindCSS*, *PostgreSQL* ve *MySQL* gibi teknolojileri kullanıyorum. Bunların yanında *WinForms*, *C#* ve *Rust* ile masaüstü uygulamaları, *FFmpeg* ve *yt-dlp* gibi araçlarla da çeşitli projeler geliştiriyorum.\n\nYeni bir teknoloji ya da araç gördüğümde genellikle denemeye başlıyorum; öğrenmeyi seven biriyim ve bu da beni sürekli farklı alanlara çekiyor.\n\nProjelerimin olabildiğince **temiz, anlaşılır ve sürdürülebilir** olmasına önem veriyorum. Bu konuda biraz **takıntılıyım**; bazen gereksiz olduğunu bilsem bile kendi işimi zorlaştırabiliyorum.\n\nŞu anki hedefim, özellikle **backend ve sistem tasarımı** alanında gelişmek ve projelerimi daha profesyonel hale getirmek. Bunun yanında kendi sistemlerimi, kütüphanelerimi ve basit, pratik araçlar üretmek istiyorum."
     },
     "manifesto": [
         "RADICAL TRANSPARENCY",
@@ -110,5 +110,5 @@
                 "PostgreSQL"
             ]
         }
-    ]   
+    ]
 }
