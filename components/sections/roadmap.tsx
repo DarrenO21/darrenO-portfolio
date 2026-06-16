@@ -5,11 +5,12 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { BlurReveal } from "@/components/effects/blur-reveal";
 import { useLanguage } from "@/providers/language-provider";
+import type { RoadmapItem } from "@/types/roadmap";
 
 export default function Roadmap() {
     const containerRef = useRef<HTMLDivElement>(null);
     const { content } = useLanguage();
-    const roadmapItems = content.roadmap || [];
+    const roadmapItems: RoadmapItem[] = content.roadmap || [];
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -84,7 +85,7 @@ export default function Roadmap() {
     );
 }
 
-const TimelineNode = ({ item, index, isEven }: { item: any, index: number, isEven: boolean }) => {
+const TimelineNode = ({ item, index, isEven }: { item: RoadmapItem, index: number, isEven: boolean }) => {
     return (
         <div className={cn("relative flex items-center justify-between w-full", isEven ? "flex-row" : "flex-row-reverse")}>
 
