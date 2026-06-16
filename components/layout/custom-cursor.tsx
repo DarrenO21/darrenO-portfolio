@@ -82,7 +82,7 @@ export function CustomCursor() {
                 translateX: "-50%",
                 translateY: "-50%",
                 opacity: isVisible ? 1 : 0,
-                zIndex: 9999,
+                zIndex: 999999,
             }}
         >
             <motion.div
