@@ -177,16 +177,4 @@
     @apply py-16 md:py-24 lg:py-32 xl:py-40 2xl:py-36;
   }
 
-  .highlight-text-primary {
-    @apply text-foreground/80 italic font-serif font-light;
-  }
-
-  .highlight-text-secondary {
-    @apply text-foreground font-semibold;
-  }
-
-  .highlight-text-tertiary {
-    @apply text-foreground font-bold;
-  }
-
 }

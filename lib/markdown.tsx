@@ -1,13 +1,13 @@
 import React from "react";
 
-const HIGHLIGHT_MAP: Record<number, string> = {
-    1: "highlight-text-tertiary",
-    2: "highlight-text-secondary",
-    3: "highlight-text-primary",
+const HIGHLIGHT_MAP: Record<"bold" | "italic", string> = {
+    bold: "text-foreground font-semibold",
+    italic: "text-foreground/80 italic font-serif font-light",
 };
 
+
 function parseInline(text: string): React.ReactNode {
-    const regex = /\*{3}(.+?)\*{3}|\*{2}(.+?)\*{2}|\*(.+?)\*/g;
+    const regex = /\*{2}(.+?)\*{2}|\*(.+?)\*/g;
     const parts: React.ReactNode[] = [];
     let lastIndex = 0;
     let match;
@@ -15,10 +15,13 @@ function parseInline(text: string): React.ReactNode {
     while ((match = regex.exec(text)) !== null) {
         if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
 
-        const groupIndex = match[1] !== undefined ? 1 : match[2] !== undefined ? 2 : 3;
+        const isBold = match[1] !== undefined;
+        const styleKey = isBold ? "bold" : "italic";
+        const matchedText = isBold ? match[1] : match[2];
+
         parts.push(
-            <span key={match.index} className={HIGHLIGHT_MAP[groupIndex]}>
-                {match[groupIndex]}
+            <span key={match.index} className={HIGHLIGHT_MAP[styleKey]}>
+                {matchedText}
             </span>
         );
 
@@ -32,7 +35,7 @@ function parseInline(text: string): React.ReactNode {
 
 export function parseMarkdown(data: any): any {
     if (typeof data === "string") {
-        if (!/\*{1,3}[^*]+\*{1,3}/.test(data) && !data.includes("\n\n")) return data;
+        if (!/\*{1,2}[^*]+\*{1,2}/.test(data) && !data.includes("\n\n")) return data;
 
         const paragraphs = data.split("\n\n");
         if (paragraphs.length === 1) return parseInline(data);
