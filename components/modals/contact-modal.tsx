@@ -23,11 +23,11 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
         <Dialog open={open} onOpenChange={onOpenChange}>
             <DialogContent
                 showCloseButton={true}
-                className="sm:max-w-[560px] p-0 gap-0 overflow-hidden border-border/50 bg-background/95 backdrop-blur-xl"
+                className="flex flex-col sm:max-w-[560px] max-h-[85vh] p-0 gap-0 border-border/50 bg-background/95 backdrop-blur-xl overflow-hidden"
             >
-                <div className="relative px-8 pt-8 pb-6">
-                    <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent z-10" />
 
+                <div className="relative px-8 pt-8 pb-4 shrink-0">
                     <DialogHeader className="gap-3">
                         <DialogTitle className="text-2xl font-bold tracking-tight">
                             {content.contact.modal_title}
@@ -36,8 +36,10 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                             {content.contact.modal_description}
                         </DialogDescription>
                     </DialogHeader>
+                </div>
 
-                    <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-6 sm:mt-8">
+                <div className="overflow-y-auto px-8 pb-8 pt-2 flex-1" data-lenis-prevent="true">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-2">
                         <a
                             href={`mailto:${content.contact.email}`}
                             className="group flex items-center gap-4 px-5 py-2.5 rounded-full border border-border/50 bg-secondary/20 backdrop-blur-sm hover:bg-foreground hover:border-foreground/30 transition-all duration-500 ease-out"
@@ -63,7 +65,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                         </a>
                     </div>
 
-                    <div className="flex flex-wrap gap-3 items-center mt-6 sm:mt-8">
+                    <div className="flex flex-wrap gap-3 items-center mt-6">
                         {content.social.map((link: any) => (
                             <div key={link.label}>
                                 <a
@@ -85,7 +87,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent z-10" />
             </DialogContent>
         </Dialog>
     );
