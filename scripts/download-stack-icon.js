@@ -2,8 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const EN_JSON_PATH = path.join(__dirname, '../contents/en.json');
-const TR_JSON_PATH = path.join(__dirname, '../contents/tr.json');
+const SHARED_JSON_PATH = path.join(__dirname, '../contents/shared.json');
 const OUTPUT_DIR = path.join(__dirname, '../public/stack');
 
 if (!fs.existsSync(OUTPUT_DIR)) {
@@ -31,17 +30,17 @@ function download(url, filePath) {
 }
 
 async function run() {
-    const enContent = JSON.parse(fs.readFileSync(EN_JSON_PATH, 'utf8'));
-    const trContent = JSON.parse(fs.readFileSync(TR_JSON_PATH, 'utf8'));
+    const shared = JSON.parse(fs.readFileSync(SHARED_JSON_PATH, 'utf8'));
 
-    const stack = enContent.stack;
+    const stack = shared.stack;
     if (!stack) {
-        console.error("No stack block found in en.json");
+        console.error("No stack block found in shared.json");
         return;
     }
 
     const categories = ['frontend', 'backend', 'database', 'tools'];
-    
+    let downloadCount = 0;
+
     for (const category of categories) {
         const items = stack[category];
         if (!items) continue;
@@ -65,7 +64,7 @@ async function run() {
                 .replace(/#/g, 'sharp')
                 .replace(/\+/g, 'plus')
                 .replace(/[^a-z0-9]/g, '');
-            
+
             const filename = `${cleanName}${ext}`;
             const destPath = path.join(OUTPUT_DIR, filename);
             const localPath = `/stack/${filename}`;
@@ -74,20 +73,20 @@ async function run() {
             try {
                 await download(url, destPath);
                 item.icon = localPath;
-
-                const trItem = trContent.stack?.[category]?.find(t => t.name === item.name);
-                if (trItem) {
-                    trItem.icon = localPath;
-                }
+                downloadCount++;
             } catch (err) {
                 console.error(`Error downloading ${item.name}:`, err.message);
             }
         }
     }
 
-    fs.writeFileSync(EN_JSON_PATH, JSON.stringify(enContent, null, 4), 'utf8');
-    fs.writeFileSync(TR_JSON_PATH, JSON.stringify(trContent, null, 4), 'utf8');
-    console.log("Updated en.json and tr.json successfully!");
+    if (downloadCount > 0) {
+        fs.writeFileSync(SHARED_JSON_PATH, JSON.stringify(shared, null, 4), 'utf8');
+        console.log(`Done! Downloaded ${downloadCount} icons and updated shared.json.`);
+    } else {
+        console.log("No remote icons found. All icons are already local.");
+    }
 }
 
 run();
+
