@@ -76,7 +76,7 @@ export default function Contact() {
                 <div className="w-full flex flex-col md:flex-row items-center justify-between pb-12 xl:py-12 xl:border-t border-border/50 gap-8">
 
                     <div className="text-sm font-mono tracking-widest text-muted-foreground uppercase flex items-center gap-4 max-xl:hidden">
-                        <span>© {new Date().getFullYear()}</span>
+                        <span>© 2026</span>
                         <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
                         <span>KINTARO. {content.contact.all_rights_reserved}</span>
                     </div>
