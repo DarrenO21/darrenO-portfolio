@@ -140,7 +140,7 @@ export default function Hero() {
                             />
                         </div>
                         <span className="text-[9px] font-mono tracking-[0.3em] uppercase text-muted-foreground [writing-mode:vertical-lr]">
-                            SCROLL
+                            {content.scroll_down}
                         </span>
                     </div>
                 </div>
