@@ -1,6 +1,8 @@
 {
     "contact_me": "Contact Me",
     "explore_projects": "Explore Projects",
+    "about_title": "About",
+    "read_full_version": "Read Full Version",
     "nav": {
         "home": "Home",
         "about": "About",
@@ -8,10 +10,6 @@
         "projects": "Projects",
         "roadmap": "Roadmap",
         "contact": "Contact"
-    },
-    "about": {
-        "title": "About",
-        "cta": "Read Full Version"
     },
     "stackTitle": "STACK",
     "frontendStack": "Frontend Technologies",
