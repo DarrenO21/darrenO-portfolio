@@ -23,15 +23,13 @@
     "projectsIntro": "*deneyler*, *ürünler* ve *dijital eserlerden* oluşan, **boşlukta** şekillendirilmiş bir koleksiyon.",
     "roadmapTitle": "Yol Haritası",
     "roadmapDescription": "Yazılım yolculuğum boyunca edindiğim tecrübeleri ve öğrendiğim teknolojileri paylaştığım bir yol haritası.",
-    "contact": {
-        "title": "İletişim",
-        "description": "İster bir projeyi hayata geçirmek için yeni bir başlangıç yapalım, ister mevcut bir sistemi daha ileri taşıyalım.",
-        "send_email": "E-posta Gönder",
-        "direct_line": "Telefon Numarası",
-        "all_rights_reserved": "TÜM HAKLARI SAKLIDIR.",
-        "modal_title": "İletişim Bilgilerim",
-        "modal_description": "Bana bir mesaj gönderin, en kısa sürede size geri dönüş yapayım."
-    },
+    "contact_title": "İLETİŞİM",
+    "contact_intro_text": "İster bir projeyi hayata geçirmek için yeni bir başlangıç yapalım, ister mevcut bir sistemi daha ileri taşıyalım.",
+    "send_email": "E-posta Gönder",
+    "direct_line": "Telefon Numarası",
+    "all_rights_reserved": "TÜM HAKLARI SAKLIDIR.",
+    "contact_modal_title": "İletişim Bilgilerim",
+    "contact_modal_description": "Bana bir mesaj gönderin, en kısa sürede size geri dönüş yapayım.",
     "others": {
         "about_project": "Proje Hakkında",
         "technologies": "Teknolojiler",
