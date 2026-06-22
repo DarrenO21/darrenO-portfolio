@@ -34,10 +34,6 @@
   <br />
 </div>
 
-## ❤️ Desteğiniz için teşekkürler!
-
-Projemin son günlerde star ve fork alması beni mutlu etti. Aslında projeyi tamamen kendim için yapmıştım. portfolio için kişisel bilgileri değiştirmek sizin için biraz zor gelebilir. bu sorunu çözmek için geliştirmelere başlayacağım.
-
 ## 📋 Hakkında
 
 **Kintarowwards**, üst düzey Awwwards ödüllü web sitelerinden ilham alan, açık kaynaklı ve son derece etkileşimli bir kişisel portföy şablonudur. Premium bir kullanıcı deneyimi sunmak için tasarlanmış pürüzsüz kaydırma, fizik tabanlı mikro etkileşimler, dinamik tema değiştirme ve tam çok dilli bir sisteme sahiptir. Her ayrıntı, yüksek performans ve temiz kod standartlarını korurken kalıcı bir izlenim bırakmak için işlenmiştir.
