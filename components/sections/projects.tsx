@@ -150,7 +150,7 @@ export default function Projects() {
                                 <BlurReveal>
                                     <div className="mt-12 flex items-center gap-4">
                                         <div className="h-px w-24 bg-border" />
-                                        <span className="text-sm font-mono text-foreground/40">
+                                        <span className="text-sm font-mono text-foreground/40 uppercase">
                                             {dict.projectsScrollText}
                                         </span>
                                     </div>
@@ -169,7 +169,7 @@ export default function Projects() {
                         ))}
 
                         <div className="w-[40vw] h-[70vh] shrink-0 flex flex-col justify-center items-center">
-                            <h3 className="text-[10vw] font-black tracking-tighter text-border">
+                            <h3 className="text-[10vw] font-black tracking-tighter text-border uppercase">
                                 {dict.projectsEndText}
                             </h3>
                         </div>
