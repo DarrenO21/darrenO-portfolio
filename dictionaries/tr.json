@@ -1,9 +1,4 @@
 {
-    "contact_me": "İletişim",
-    "explore_projects": "Projelerim",
-    "about_title": "Hakkımda",
-    "read_full_version": "Tamamını Oku",
-    "scroll_down": "Kaydır",
     "nav": {
         "home": "Ana Sayfa",
         "about": "Hakkımda",
@@ -12,6 +7,11 @@
         "roadmap": "Yol Haritası",
         "contact": "İletişim"
     },
+    "contact_me": "İletişim",
+    "explore_projects": "Projelerim",
+    "about_title": "Hakkımda",
+    "read_full_version": "Tamamını Oku",
+    "scroll_down": "Kaydır",
     "stackTitle": "Teknolojiler",
     "frontendStack": "Frontend",
     "backendStack": "Backend",
@@ -35,8 +35,6 @@
         "technologies": "Teknolojiler",
         "live_demo": "Canlı Demo",
         "source_code": "Kaynak Kodları",
-        "project_details": "Proje Detayları",
-        "select_language": "Dil Seçin",
-        "change_the_site_language": "Sitenin dilini değiştirmek için tıklayın."
+        "project_details": "Proje Detayları"
     }
 }
