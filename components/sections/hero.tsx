@@ -161,11 +161,19 @@ function PhotoTile({ src, className }: { src: string; className?: string }) {
         className || "",
       ].join(" ")}
     >
+      {/* Blurry background fill so empty space still looks good */}
       <div
-        className="absolute inset-0 bg-cover bg-center grayscale opacity-80"
+        className="absolute inset-0 bg-cover bg-center grayscale opacity-35 blur-md scale-110"
         style={{ backgroundImage: `url('${src}')` }}
       />
-      <div className="absolute inset-0 bg-background/15" />
+
+      {/* Main image layer — shows full image without cutting your face */}
+      <div
+        className="absolute inset-0 bg-contain bg-center bg-no-repeat grayscale opacity-85"
+        style={{ backgroundImage: `url('${src}')` }}
+      />
+
+      <div className="absolute inset-0 bg-background/20" />
     </div>
   );
 }
