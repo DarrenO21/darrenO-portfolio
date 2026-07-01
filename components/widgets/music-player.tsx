@@ -58,7 +58,7 @@ export function MusicPlayer() {
   }
 
   return (
-    <aside className="fixed left-4 top-4 z-[120] hidden w-[430px] border border-border/70 bg-background/90 p-2 shadow-2xl backdrop-blur-xl xl:block">
+    <aside className="fixed left-4 top-24 z-[120] hidden w-[430px] border border-border/70 bg-background/90 p-2 shadow-2xl backdrop-blur-xl xl:block">
       <audio
         ref={audioRef}
         src={activeTrack.src}
