@@ -39,7 +39,7 @@ export default function Navbar() {
   { name: dict.nav.home, href: "#home" },
   { name: dict.nav.about, href: "#about" },
   { name: dict.nav.stack, href: "#stack" },
-  { name: dict.nav.roadmap, href: "#experience" },
+  { name: dict.nav.roadmap, href: "#profile" },
   { name: dict.nav.contact, href: "#contact" },
 ], [dict.nav]);
 
