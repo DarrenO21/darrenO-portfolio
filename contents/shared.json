@@ -1,142 +1,93 @@
 {
-    "contact": {
-        "location": "Pennington, NJ",
-        "email": "darrengetsemail@gmail.com",
-        "phone": "609-934-2730."
+  "contact": {
+    "location": "New Jersey, United States",
+    "email": "darrengetsemail@gmail.com",
+    "phone": "609-934-2730"
+  },
+  "social": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/DarrenO21"
     },
-    "social": [
-        {
-            "label": "GitHub",
-            "href": "https://github.com/xkintaro"
-        },
-        {
-            "label": "Discord",
-            "href": "https://discord.gg/NSQk27Zdkv"
-        },
-        {
-            "label": "Instagram",
-            "href": "https://instagram.com/xkintaro"
-        },
-        {
-            "label": "Linkedin",
-            "href": "https://www.linkedin.com/in/mustafa-tasal/"
-        }
-    ],
-    "stack": {
-        "frontend": [
-            {
-                "name": "React",
-                "icon": "/stack/react.svg",
-                "featured": true
-            },
-            {
-                "name": "Next.js",
-                "icon": "/stack/nextjs.svg",
-                "featured": true
-            },
-            {
-                "name": "Tailwind CSS",
-                "icon": "/stack/tailwindcss.svg",
-                "featured": true
-            },
-            {
-                "name": "Bootstrap",
-                "icon": "/stack/bootstrap.svg"
-            },
-            {
-                "name": "Framer Motion",
-                "icon": "/stack/framermotion.svg"
-            },
-            {
-                "name": "TypeScript",
-                "icon": "/stack/typescript.svg"
-            },
-            {
-                "name": "JavaScript",
-                "icon": "/stack/javascript.svg"
-            },
-            {
-                "name": "HTML5",
-                "icon": "/stack/html5.svg"
-            },
-            {
-                "name": "CSS3",
-                "icon": "/stack/css3.svg"
-            }
-        ],
-        "backend": [
-            {
-                "name": "Node.js",
-                "icon": "/stack/nodejs.svg"
-            },
-            {
-                "name": "PHP",
-                "icon": "/stack/php.svg"
-            },
-            {
-                "name": "Laravel",
-                "icon": "/stack/laravel.svg",
-                "featured": true
-            },
-            {
-                "name": "ASP.NET",
-                "icon": "/stack/aspnet.svg"
-            },
-            {
-                "name": "Rust",
-                "icon": "/stack/rust.svg"
-            },
-            {
-                "name": "C#",
-                "icon": "/stack/csharp.svg"
-            },
-            {
-                "name": "Python",
-                "icon": "/stack/python.svg"
-            },
-            {
-                "name": "Discord.js",
-                "icon": "/stack/discordjs.svg"
-            }
-        ],
-        "database": [
-            {
-                "name": "PostgreSQL",
-                "icon": "/stack/postgresql.svg",
-                "featured": true
-            },
-            {
-                "name": "MySQL",
-                "icon": "/stack/mysql.svg",
-                "featured": true
-            },
-            {
-                "name": "MongoDB",
-                "icon": "/stack/mongodb.svg"
-            },
-            {
-                "name": "Prisma",
-                "icon": "/stack/prisma.svg"
-            },
-            {
-                "name": "Neon",
-                "icon": "/stack/neon.png"
-            }
-        ],
-        "tools": [
-            {
-                "name": "Git",
-                "icon": "/stack/git.svg"
-            },
-            {
-                "name": "Vercel",
-                "icon": "/stack/vercel.svg"
-            },
-            {
-                "name": "Tauri",
-                "icon": "/stack/tauri.svg"
-            }
-        ]
+    {
+      "label": "MyIntern",
+      "href": "https://myintern.net"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "#"
     }
+  ],
+  "stack": {
+    "frontend": [
+      {
+        "name": "Python",
+        "icon": "/stack/python.svg",
+        "featured": true
+      },
+      {
+        "name": "Data Analysis",
+        "icon": "/stack/python.svg",
+        "featured": true
+      },
+      {
+        "name": "NumPy",
+        "icon": "/stack/python.svg"
+      },
+      {
+        "name": "Matplotlib",
+        "icon": "/stack/python.svg"
+      }
+    ],
+    "backend": [
+      {
+        "name": "Neuroscience",
+        "icon": "/stack/react.svg",
+        "featured": true
+      },
+      {
+        "name": "Medicine",
+        "icon": "/stack/nextjs.svg",
+        "featured": true
+      },
+      {
+        "name": "Biomedical Science",
+        "icon": "/stack/typescript.svg"
+      },
+      {
+        "name": "Public Health",
+        "icon": "/stack/javascript.svg"
+      }
+    ],
+    "database": [
+      {
+        "name": "Research Notes",
+        "icon": "/stack/git.svg",
+        "featured": true
+      },
+      {
+        "name": "Literature Review",
+        "icon": "/stack/html5.svg"
+      },
+      {
+        "name": "Statistics",
+        "icon": "/stack/css3.svg"
+      }
+    ],
+    "tools": [
+      {
+        "name": "GitHub",
+        "icon": "/stack/git.svg",
+        "featured": true
+      },
+      {
+        "name": "Vercel",
+        "icon": "/stack/vercel.svg"
+      },
+      {
+        "name": "Web Portfolio",
+        "icon": "/stack/nextjs.svg"
+      }
+    ]
+  }
 }
-
