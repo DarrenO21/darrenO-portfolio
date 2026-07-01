@@ -1,114 +1,95 @@
 {
-    "about": {
-        "intro": "**Temiz ve sürdürülebilir sistemler** kurmaya odaklanan bir *Full Stack Geliştiriciyim*.",
-        "description": "Sürekli **yeni şeyler öğrenmeyi** seven, öğrendiklerini pratiğe dökmeye çalışan biriyim. *Web* ve *masaüstü* uygulamaları geliştiriyorum. Basit, **pratik** ve **sürdürülebilir** araçlarla uğraşmayı seviyorum.",
-        "full": "Selam, ben **Kintaro**; gerçek adım **Mustafa**. Son birkaç yıldır aktif olarak yazılımla uğraşıyorum ve bu süreçte kendimi büyük ölçüde kendi projelerim ve denemelerim üzerinden geliştirdim.\n\nAğırlıklı olarak web geliştirme tarafında çalışıyorum; *React*, *Next.js*, *Laravel*, *TailwindCSS*, *PostgreSQL* ve *MySQL* gibi teknolojileri kullanıyorum. Bunların yanında *WinForms*, *C#* ve *Rust* ile masaüstü uygulamaları, *FFmpeg* ve *yt-dlp* gibi araçlarla da çeşitli projeler geliştiriyorum.\n\nYeni bir teknoloji ya da araç gördüğümde genellikle denemeye başlıyorum; öğrenmeyi seven biriyim ve bu da beni sürekli farklı alanlara çekiyor.\n\nProjelerimin olabildiğince **temiz, anlaşılır ve sürdürülebilir** olmasına önem veriyorum. Bu konuda biraz **takıntılıyım**; bazen gereksiz olduğunu bilsem bile kendi işimi zorlaştırabiliyorum.\n\nŞu anki hedefim, özellikle **backend ve sistem tasarımı** alanında gelişmek ve projelerimi daha profesyonel hale getirmek. Bunun yanında kendi sistemlerimi, kütüphanelerimi ve basit, pratik araçlar üretmek istiyorum."
+  "about": {
+    "intro": "I'm Darren Oommen, a student exploring neuroscience, medicine, data analysis, and music.",
+    "description": "I’m a high school student interested in biomedical science, neuroscience, medicine, and computational research. I’m currently building skills in Python, NumPy, Matplotlib, and data analysis while looking for ways to connect healthcare, research, service, and real-world impact.",
+    "full": "Hi, I’m Darren Oommen. I’m a high school student interested in biomedical science, neuroscience, medicine, and data analysis.\n\nI’m currently building skills in Python, NumPy, Matplotlib, statistics, and research communication. My long-term goal is to use computational tools to better understand biomedical and public health questions.\n\nMy interest in medicine and neuroscience is shaped by both academics and personal experience. I help care for my brother, who has autism, which has made me more aware of how neurological and developmental conditions affect families and communities.\n\nI’m the co-founder and Healthcare Lead for MyIntern.net, a student internship platform where I focus on healthcare-related opportunities. I’m also volunteering at RWJ and Capital Health during summer 2026.\n\nOutside of science, music is a major part of my life. I’ve performed as a percussionist in youth orchestra, marching band, indoor percussion, church events, weddings, and live community performances. I also started a drum tutoring / summer camp business.\n\nI’m interested in combining science, service, leadership, music, and creativity into work that actually helps people."
+  },
+  "manifesto": [
+    "LEARN DEEPLY",
+    "BUILD WITH PURPOSE",
+    "MEDICINE MEETS DATA",
+    "RESEARCH BEFORE HYPE",
+    "SERVICE MATTERS",
+    "COMMUNICATE CLEARLY"
+  ],
+  "projects": [],
+  "roadmap": [
+    {
+      "id": "01",
+      "year": "2024–2025",
+      "description": "Freshman year at MCTS STEM Academy. Took dual-enrollment and STEM coursework including Biology, World History, Algebra II, AP Computer Science Principles, and PLTW Introduction to Engineering Design. Finished with a 4.44 weighted GPA and scored a 5 on AP Computer Science Principles.",
+      "stack": [
+        "STEM Academy",
+        "AP CSP",
+        "Dual Enrollment",
+        "4.44 GPA"
+      ]
     },
-    "manifesto": [
-        "RADICAL TRANSPARENCY",
-        "INTENTIONAL MINIMALISM",
-        "ARCHITECTURAL INTEGRITY",
-        "FIRST PRINCIPLES THINKING",
-        "PERFORMANCE WITHOUT COMPROMISE",
-        "SCALABLE VISION"
-    ],
-    "projects": [
-        {
-            "id": "1",
-            "title": "Aether Media",
-            "category": "Medya Aracı",
-            "year": "2026",
-            "description": "Aether Media, kullanıcıların medya dosyalarını (video, ses, görsel) toplu olarak hızlı, güvenli ve kolay bir şekilde dönüştürmelerini, sıkıştırmalarını, boyutlandırmalarını ve yeniden isimlendirmelerini sağlayan bir medya işleme aracıdır.\n\nRust dilinin performansı ve Tauri'nin hafif yapısı üzerine inşa edilmiştir. Arka planda FFmpeg'in gücünü kullanarak, karmaşık medya işlemlerini modern bir arayüzle sunar. Dosyalarınız asla bir sunucuya yüklenmez; tüm işlemler tamamen yerel olarak kendi cihazınızda gerçekleşir.",
-            "image": "/projects/20260427093247885.jpg",
-            "repo": "https://github.com/xkintaro/aether-media",
-            "stack": [
-                "FFmpeg",
-                "Rust",
-                "Tauri",
-                "React",
-                "TailwindCSS"
-            ]
-        },
-        {
-            "id": "2",
-            "title": "Aether JS",
-            "category": "Kütüphane",
-            "year": "2026",
-            "description": "Aether JS, modern web geliştirme için tasarlanmış, headless ve utility-first bir JavaScript etkileşim yöneticisidir. Karmaşık JavaScript kodları yazmak yerine, yalnızca HTML data-aether-* niteliklerini kullanarak tamamen erişilebilir (a11y) modallar, sekmeler ve akordeonlar oluşturmanızı sağlar. TailwindCSS ve benzeri framework'lerle kusursuz uyum sağlayan kütüphane, stili tamamen size bırakarak durum yönetimine odaklanır. Odak hapsetme, dinamik DOM gözlemi, URL senkronizasyonu ve tema yönetimi sunar.",
-            "image": "/projects/20260427093247620.jpg",
-            "demo": "https://xkintaro.github.io/aether-js-documentation/en.html",
-            "repo": "https://github.com/xkintaro/aether-js",
-            "stack": [
-                "JavaScript"
-            ]
-        },
-        {
-            "id": "3",
-            "title": "File Manager",
-            "category": "Web Uygulaması",
-            "year": "2025",
-            "description": "File Manager, cyberpunk esintili bir arayüze sahip, self-hosted bir dosya yönetimi uygulamasıdır. SQLite destekli şık ve modern bir web arayüzü üzerinden her türlü dosyayı yüklemenize, düzenlemenize, etiketlemenize ve filtrelemenize olanak tanır — harici bir veritabanı gerektirmez.\n\nTüm dosyalar yerel olarak makinenizde saklanır — bulut yok, üçüncü taraf sunucular yok. Dosyalarınızı yükleyin, etiketler ve anahtar kelimeler atayın ve güçlü filtreleme ile anında bulun. Uygulama, resimler ve videolar için otomatik olarak thumbnails oluşturarak tüm arşivinize görsel bir genel bakış sunar.",
-            "image": "/projects/20260305210513749.jpg",
-            "repo": "https://github.com/xkintaro/file-manager",
-            "stack": [
-                "React",
-                "TailwindCSS",
-                "Node.js",
-                "SQLite"
-            ]
-        }
-    ],
-    "roadmap": [
-        {
-            "id": "01",
-            "year": "2022",
-            "description": "Yazılımla ilk kez lisede tanıştım. Nesne tabanlı programlama dersinde C# kullanarak programlamanın temellerini ve mantığını öğrendim.",
-            "stack": [
-                "C#"
-            ]
-        },
-        {
-            "id": "02",
-            "year": "2023",
-            "description": "HTML, CSS ve ASP.NET öğrenerek statik ve dinamik web siteleri geliştirmeye başladım. Bu dönemde projelerimde veritabanı kullanmayı da öğrendim.",
-            "stack": [
-                "HTML",
-                "CSS",
-                "ASP.NET",
-                "MySQL"
-            ]
-        },
-        {
-            "id": "03",
-            "year": "2024",
-            "description": "Lisedeki son yılımdı. CSS ile arayüz geliştirme konusunda kendimi iyice ilerlettim ve staj yaptığım yerde ASP.NET ile çalışmaya devam ettim.",
-            "stack": [
-                "HTML",
-                "CSS",
-                "ASP.NET",
-                "MySQL"
-            ]
-        },
-        {
-            "id": "04",
-            "year": "2025",
-            "description": "Lise sonrasında React, Node.js, Tailwind CSS ve MongoDB gibi modern teknolojilere yöneldim. Bu süreçte birçok web sitesi ve uygulama geliştirdim. Ek olarak Python ile kendi kullanımıma yönelik çeşitli araçlar yazmaya başladım.",
-            "stack": [
-                "React",
-                "Node.js",
-                "TailwindCSS",
-                "MongoDB"
-            ]
-        },
-        {
-            "id": "05",
-            "year": "2026",
-            "description": "PostAjans'ta stajyer olarak çalışmaya başladım ve burada ağırlıklı olarak Laravel üzerine yoğunlaştım. Bunun yanında boş zamanlarımda Next.js ile web projeleri geliştiriyor; Tauri, FFmpeg gibi teknolojileri de kullanarak çeşitli kişisel projeler üretiyorum.",
-            "stack": [
-                "Laravel",
-                "Next.js",
-                "PostgreSQL"
-            ]
-        }
-    ]
+    {
+      "id": "02",
+      "year": "2025",
+      "description": "Won Best Position Paper at Rutgers Model UN in the Disarmament and International Security Committee. Continued building interests in public policy, global issues, communication, and leadership.",
+      "stack": [
+        "Model UN",
+        "Best Position Paper",
+        "Leadership",
+        "Writing"
+      ]
+    },
+    {
+      "id": "03",
+      "year": "2025–2026",
+      "description": "Sophomore year at Hopewell Valley Central High School. Took AP Seminar, Chemistry Honors, English 2 Honors, Pre-Calculus Honors, Spanish 3, US History 1 Global Honors, Basic Piano, and Wellness. Self-studied AP Psychology and AP Calculus BC.",
+      "stack": [
+        "AP Seminar",
+        "Chemistry Honors",
+        "Pre-Calculus",
+        "Self-Study"
+      ]
+    },
+    {
+      "id": "04",
+      "year": "2026",
+      "description": "Co-founder and Healthcare Lead for MyIntern.net, a student internship platform. Focused primarily on finding and organizing healthcare-related internships for students interested in medicine, biomedical science, and related fields.",
+      "stack": [
+        "MyIntern.net",
+        "Healthcare Lead",
+        "Internships",
+        "Student Platform"
+      ]
+    },
+    {
+      "id": "05",
+      "year": "Summer 2026",
+      "description": "Volunteering at RWJ and Capital Health while continuing to build healthcare exposure. Also volunteered with special needs children at Princeton Alliance Church through summer Sundays and one-week summer camps in 2024 and 2025.",
+      "stack": [
+        "RWJ",
+        "Capital Health",
+        "Healthcare",
+        "Service"
+      ]
+    },
+    {
+      "id": "06",
+      "year": "Music",
+      "description": "Two-year GPYO Principal Percussionist. Performed at Princeton Richardson Auditorium, Rutgers Mason Gross Performing Arts Center, Main Street Disneyland, church events, weddings, and the First FOMAA National Women’s Summit with Musify Philly. Marched bass drum, snare, and tenors across marching band and indoor percussion.",
+      "stack": [
+        "Percussion",
+        "GPYO",
+        "Marching Band",
+        "Performance"
+      ]
+    },
+    {
+      "id": "07",
+      "year": "Personal",
+      "description": "Poom belt in Taekwondo under two-time national champion Master Park. Enjoys fishing, juggling, origami, ventriloquism, and creative projects. Previously created an origami and ventriloquism YouTube channel with 52 subscribers.",
+      "stack": [
+        "Taekwondo",
+        "Fishing",
+        "Juggling",
+        "Creativity"
+      ]
+    }
+  ]
 }
