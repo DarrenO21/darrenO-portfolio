@@ -9,7 +9,7 @@ import { useLanguage } from "@/providers/language-provider";
 import type { RoadmapItem } from "@/types/roadmap";
 
 const RESUME_LINK = "/resume.pdf";
-const TRANSCRIPT_LINK = "PASTE_YOUR_TRANSCRIPT_LINK_HERE";
+const TRANSCRIPT_LINK = "https://docs.google.com/document/d/1jf8SMKqzXJ1jMvl4jAzimdjGvIyOkF4xQ7l5BEmqEHM/edit?usp=sharing";
 const DRUM_LESSONS_LINK = "https://deeceemusic.com";
 
 type ProfileItem = Omit<RoadmapItem, "description"> & {
