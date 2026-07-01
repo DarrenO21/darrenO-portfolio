@@ -6,7 +6,7 @@ import { ArrowRight, Mail } from "lucide-react";
 
 import { useLanguage } from "@/providers/language-provider";
 import { ContactModal } from "@/components/modals/contact-modal";
-
+import { InteractiveParticles } from "@/components/effects/interactive-particles";
 const heroPhotos = [
   "/hero/hero-1.jpg",
   "/hero/hero-2.jpg",
