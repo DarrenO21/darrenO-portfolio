@@ -42,14 +42,12 @@ export default function Hero() {
     const filter = useMotionTemplate`blur(${blurValue}px)`;
 
     const scrollToProjects = useCallback(() => {
-    const experienceSection = document.getElementById("experience");
+    const profileSection = document.getElementById("profile");
 
-    if (experienceSection) {
-    experienceSection.scrollIntoView({ behavior: "smooth" });
+  if (profileSection) {
+    profileSection.scrollIntoView({ behavior: "smooth" });
   }
 }, []);
-        }
-    }, []);
 
     return (
         <section
