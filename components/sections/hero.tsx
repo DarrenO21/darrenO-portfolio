@@ -8,7 +8,7 @@ import { useLanguage } from "@/providers/language-provider";
 import { ContactModal } from "@/components/modals/contact-modal";
 import { InteractiveParticles } from "@/components/effects/interactive-particles";
 const heroPhotos = [
-  "/hero/hero-1.jpg",
+  "Darren Sketch.png",
   "/hero/hero-2.jpg",
   "/hero/hero-3.jpg",
   "/hero/hero-4.jpg",
