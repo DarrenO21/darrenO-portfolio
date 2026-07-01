@@ -9,10 +9,10 @@ import { ContactModal } from "@/components/modals/contact-modal";
 import { InteractiveParticles } from "@/components/effects/interactive-particles";
 const heroPhotos = [
   "Darren Sketch.png",
-  "/hero/hero-2.jpg",
-  "/hero/hero-3.jpg",
-  "/hero/hero-4.jpg",
-  "/hero/hero-5.jpg",
+  "IMG_0531.jpeg",
+  "IMG_1993.jpeg",
+  "IMG_4632.jpeg",
+  "IMG_5115.jpeg",
   "/hero/hero-6.jpg",
 ];
 
