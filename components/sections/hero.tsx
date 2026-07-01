@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { motion } from "framer-motion";
 import { ArrowRight, Mouse } from "lucide-react";
 
 import { useLanguage } from "@/providers/language-provider";
@@ -25,20 +24,14 @@ export default function Hero() {
       className="relative min-h-screen overflow-hidden bg-background flex items-center border-b border-border/50"
     >
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[-15%] left-[-10%] h-[420px] w-[420px] rounded-full bg-primary/10 blur-[140px]" />
-        <div className="absolute bottom-[-20%] right-[-10%] h-[520px] w-[520px] rounded-full bg-primary/10 blur-[160px]" />
-
+        <div className="absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-primary/10 blur-[150px]" />
+        <div className="absolute bottom-[-20%] right-[-10%] h-[600px] w-[600px] rounded-full bg-primary/10 blur-[180px]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:72px_72px] opacity-[0.08]" />
       </div>
 
       <div className="container mx-auto px-container relative z-10">
         <div className="grid grid-cols-1 xl:grid-cols-[1.1fr_0.9fr] gap-12 xl:gap-20 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            className="max-w-5xl"
-          >
+          <div className="max-w-5xl">
             <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-border/60 bg-secondary/10 px-4 py-2 text-xs font-mono uppercase tracking-[0.25em] text-muted-foreground">
               <span className="h-2 w-2 rounded-full bg-primary" />
               medicine · neuroscience · data
@@ -79,15 +72,10 @@ export default function Hero() {
                 </span>
               </button>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
-            className="relative hidden xl:block"
-          >
-            <div className="relative border border-border/60 bg-secondary/10 backdrop-blur-md p-8 min-h-[520px] overflow-hidden">
+          <div className="relative hidden xl:block">
+            <div className="relative min-h-[520px] overflow-hidden border border-border/60 bg-secondary/10 backdrop-blur-md p-8">
               <div className="absolute right-6 top-6 font-mono text-xs tracking-[0.35em] text-muted-foreground">
                 2026
               </div>
@@ -107,8 +95,9 @@ export default function Hero() {
                   </h2>
 
                   <p className="mt-6 text-muted-foreground leading-relaxed">
-                    Building toward medicine and neuroscience through healthcare volunteering,
-                    research skills, programming, statistics, and service.
+                    Building toward medicine and neuroscience through healthcare
+                    volunteering, research skills, programming, statistics, and
+                    service.
                   </p>
                 </div>
 
@@ -131,7 +120,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         <div className="absolute bottom-8 left-container hidden md:flex items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-muted-foreground">
