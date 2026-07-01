@@ -7,7 +7,7 @@ const tracks = [
   {
     title: "practice room",
     artist: "darren oommen",
-    src: "/music/track-1.mp3",
+    src: "VibeDepot - lofi hiphop music.mp3",
   },
   {
     title: "drum set clip",
