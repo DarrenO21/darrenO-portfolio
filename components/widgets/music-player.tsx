@@ -76,7 +76,7 @@ export function MusicPlayer() {
   }
 
   return (
-    <>
+    <div className="relative z-[180]">
       <audio
         ref={audioRef}
         src={activeTrack.src}
@@ -84,14 +84,14 @@ export function MusicPlayer() {
         onEnded={() => setIsPlaying(false)}
         onError={() => {
           setIsPlaying(false);
-          setError("Audio file not found.");
+          setError("Audio file not found. Check public/music.");
         }}
       />
 
       <button
         type="button"
-        onClick={() => setOpen(true)}
-        className="fixed right-5 top-24 z-[150] flex h-14 w-14 items-center justify-center rounded-full border border-primary/30 bg-background/35 text-foreground shadow-2xl backdrop-blur-2xl transition-all duration-300 hover:scale-105 hover:border-primary/70 hover:bg-primary/15"
+        onClick={() => setOpen((value) => !value)}
+        className="relative flex h-14 w-14 items-center justify-center rounded-full border border-primary/30 bg-background/35 text-foreground shadow-xl backdrop-blur-2xl transition-all duration-300 hover:scale-105 hover:border-primary/70 hover:bg-primary/15"
         aria-label="Open music player"
       >
         <span className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 via-emerald-400/10 to-transparent" />
@@ -99,7 +99,7 @@ export function MusicPlayer() {
       </button>
 
       {open && (
-        <div className="fixed right-5 top-40 z-[150] w-[330px] overflow-hidden rounded-3xl border border-primary/25 bg-background/35 p-4 shadow-2xl backdrop-blur-2xl">
+        <div className="absolute right-0 top-[calc(100%+1rem)] w-[330px] overflow-hidden rounded-3xl border border-primary/25 bg-background/45 p-4 shadow-2xl backdrop-blur-2xl">
           <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary/20 via-emerald-500/10 to-transparent" />
 
           <div className="relative z-10">
@@ -121,7 +121,7 @@ export function MusicPlayer() {
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-background/40 transition hover:bg-secondary/30"
+                className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-border/60 bg-background/40 transition hover:bg-secondary/30"
                 aria-label="Close music player"
               >
                 <X className="h-4 w-4" />
@@ -168,17 +168,19 @@ export function MusicPlayer() {
               </button>
             </div>
 
-            <div className="mb-4 flex h-12 items-end justify-center gap-1 rounded-2xl border border-border/60 bg-background/35 px-4 py-3">
-              {[18, 32, 46, 28, 38, 22, 34, 16].map((height, index) => (
-                <span
-                  key={index}
-                  className={[
-                    "w-1.5 rounded-full bg-primary transition-all",
-                    isPlaying ? "animate-pulse opacity-100" : "opacity-35",
-                  ].join(" ")}
-                  style={{ height }}
-                />
-              ))}
+            <div className="mb-4 flex h-20 items-center justify-center overflow-hidden rounded-2xl border border-border/60 bg-background/35 px-4">
+              <div className="flex h-12 items-end justify-center gap-1 overflow-hidden">
+                {[18, 32, 46, 28, 38, 22, 34, 16].map((height, index) => (
+                  <span
+                    key={index}
+                    className={[
+                      "w-1.5 rounded-full bg-primary transition-all",
+                      isPlaying ? "animate-pulse opacity-100" : "opacity-35",
+                    ].join(" ")}
+                    style={{ height }}
+                  />
+                ))}
+              </div>
             </div>
 
             <div className="flex items-center gap-3 rounded-2xl border border-border/60 bg-background/35 px-4 py-3">
@@ -197,13 +199,14 @@ export function MusicPlayer() {
 
             {error && (
               <p className="mt-3 text-xs text-red-400">
-                {error} Check that your file exists in{" "}
+                {error} Make sure your MP3s are named{" "}
+                <code>track-1.mp3</code> and <code>track-2.mp3</code> inside{" "}
                 <code>public/music</code>.
               </p>
             )}
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
