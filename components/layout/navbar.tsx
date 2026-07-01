@@ -220,7 +220,7 @@ export default function Navbar() {
                 className="mt-8 flex items-center justify-between"
               >
                 <div className="flex items-center gap-4">
-                  <LanguageSwitcher />
+                  <MusicPlayer />
                   <ThemeSwitcher />
                 </div>
               </motion.div>
