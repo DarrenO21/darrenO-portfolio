@@ -8,13 +8,17 @@ import { BlurReveal } from "@/components/effects/blur-reveal";
 import { useLanguage } from "@/providers/language-provider";
 import type { RoadmapItem } from "@/types/roadmap";
 
+const RESUME_LINK = "/resume.pdf";
+const TRANSCRIPT_LINK = "PASTE_YOUR_TRANSCRIPT_LINK_HERE";
+const DRUM_LESSONS_LINK = "https://deeceemusic.com";
+
 type ProfileItem = Omit<RoadmapItem, "description"> & {
   description: ReactNode;
 };
 
 export default function Roadmap() {
   const { content, dict } = useLanguage();
-  const profileItems: ProfileItem[] = content.roadmap || [];
+  const profileItems = (content.roadmap || []) as ProfileItem[];
 
   const featuredCoursework = profileItems[0];
   const remainingItems = profileItems.slice(1);
@@ -57,19 +61,20 @@ export default function Roadmap() {
                   </h3>
 
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {featuredCoursework.stack.map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-full border border-border/40 bg-background/60 px-3 py-1 text-xs font-medium uppercase tracking-wider text-muted-foreground shadow-sm"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                    {Array.isArray(featuredCoursework.stack) &&
+                      featuredCoursework.stack.map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-border/40 bg-background/60 px-3 py-1 text-xs font-medium uppercase tracking-wider text-muted-foreground shadow-sm"
+                        >
+                          {tag}
+                        </span>
+                      ))}
                   </div>
 
                   <div className="mt-8 flex flex-col sm:flex-row gap-3">
                     <a
-                      href="/resume.pdf"
+                      href={RESUME_LINK}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center justify-center gap-2 rounded-full border border-border/60 bg-foreground px-5 py-3 text-sm font-medium text-background transition hover:bg-background hover:text-foreground"
@@ -79,7 +84,7 @@ export default function Roadmap() {
                     </a>
 
                     <a
-                      href="https://docs.google.com/document/d/1jf8SMKqzXJ1jMvl4jAzimdjGvIyOkF4xQ7l5BEmqEHM/edit?usp=sharing"
+                      href={TRANSCRIPT_LINK}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center justify-center gap-2 rounded-full border border-border/60 bg-background/60 px-5 py-3 text-sm font-medium text-foreground transition hover:bg-secondary/30"
@@ -109,6 +114,12 @@ export default function Roadmap() {
 }
 
 function ProfileCard({ item, index }: { item: ProfileItem; index: number }) {
+  const title = String(item.year).toLowerCase();
+  const isDrumCard =
+    title.includes("percussion") ||
+    title.includes("drum") ||
+    title.includes("music");
+
   return (
     <BlurReveal>
       <motion.article
@@ -135,15 +146,28 @@ function ProfileCard({ item, index }: { item: ProfileItem; index: number }) {
             </h3>
 
             <div className="mt-6 flex flex-wrap gap-2">
-              {item.stack.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-border/40 bg-background/60 px-3 py-1 text-xs font-medium uppercase tracking-wider text-muted-foreground shadow-sm"
-                >
-                  {tag}
-                </span>
-              ))}
+              {Array.isArray(item.stack) &&
+                item.stack.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-border/40 bg-background/60 px-3 py-1 text-xs font-medium uppercase tracking-wider text-muted-foreground shadow-sm"
+                  >
+                    {tag}
+                  </span>
+                ))}
             </div>
+
+            {isDrumCard && (
+              <a
+                href={DRUM_LESSONS_LINK}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-7 inline-flex items-center justify-center gap-2 rounded-full border border-border/60 bg-foreground px-5 py-3 text-sm font-medium text-background transition hover:bg-background hover:text-foreground"
+              >
+                Get Drum Lessons
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
+            )}
           </div>
 
           <div className="text-sm md:text-base leading-relaxed text-muted-foreground xl:pt-10">
