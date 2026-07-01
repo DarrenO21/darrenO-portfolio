@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
 import { BlurReveal } from "@/components/effects/blur-reveal";
 import { useLanguage } from "@/providers/language-provider";
@@ -48,7 +49,7 @@ function ExperienceCard({
   item: RoadmapItem;
   index: number;
 }) {
-  const isFeatureCard = index === 0 || index === 3 || index === 6;
+  const isFeatureCard = index === 0 || index === 3 || index === 4;
 
   return (
     <BlurReveal>
@@ -56,7 +57,7 @@ function ExperienceCard({
         whileHover={{ y: -6 }}
         transition={{ duration: 0.25, ease: "easeOut" }}
         className={[
-          "group relative min-h-[320px] overflow-hidden border border-border/60 bg-secondary/5 backdrop-blur-md p-7 md:p-8 transition-all duration-500",
+          "group relative min-h-[340px] overflow-hidden border border-border/60 bg-secondary/5 backdrop-blur-md p-7 md:p-8 transition-all duration-500",
           "hover:bg-secondary/20 hover:border-border hover:shadow-2xl",
           isFeatureCard ? "xl:col-span-2" : "",
         ].join(" ")}
@@ -79,23 +80,38 @@ function ExperienceCard({
           </h3>
 
           <div className="mt-5 space-y-4 text-sm md:text-base leading-relaxed text-muted-foreground">
-            {item.description.split("\n").map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            <SafeDescription description={item.description} />
           </div>
 
           <div className="mt-auto pt-8 flex flex-wrap gap-2">
-            {item.stack.map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-border/40 bg-background/50 px-3 py-1 text-xs font-medium uppercase tracking-wider text-muted-foreground shadow-sm"
-              >
-                {tag}
-              </span>
-            ))}
+            {Array.isArray(item.stack) &&
+              item.stack.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-border/40 bg-background/50 px-3 py-1 text-xs font-medium uppercase tracking-wider text-muted-foreground shadow-sm"
+                >
+                  {tag}
+                </span>
+              ))}
           </div>
         </div>
       </motion.article>
     </BlurReveal>
   );
+}
+
+function SafeDescription({ description }: { description: ReactNode }) {
+  if (typeof description === "string") {
+    return (
+      <>
+        {description.split("\n").map((paragraph, index) => {
+          if (!paragraph.trim()) return null;
+
+          return <p key={index}>{paragraph}</p>;
+        })}
+      </>
+    );
+  }
+
+  return <div>{description}</div>;
 }
