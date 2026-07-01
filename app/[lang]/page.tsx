@@ -28,7 +28,7 @@ export default function Home() {
 
           <ManifestoFlow reverse />
 
-          <section id="experience">
+          <section id="profile">
             <Roadmap />
           </section>
 
