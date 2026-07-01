@@ -88,7 +88,7 @@ export function Preloader() {
                             <div className="absolute inset-3 rounded-full border border-border/50 bg-secondary/5 backdrop-blur-md" />
 
                             <Image
-                                src="/logo.png"
+                                src="/ChatGPT Image Jul 1, 2026, 06_02_41 PM.png"
                                 alt="Logo"
                                 width={56}
                                 height={56}
