@@ -1,106 +1,114 @@
 "use client";
 
-import Image from "next/image";
-import { useLanguage } from "@/providers/language-provider";
+import { Brain, BookOpen, Code2, Wrench } from "lucide-react";
+
 import { BlurReveal } from "@/components/effects/blur-reveal";
-import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-} from "@/components/ui/hover-card";
+import { useLanguage } from "@/providers/language-provider";
 import type { StackItem } from "@/types/stack";
 
 export default function Stack() {
-    const { content, dict } = useLanguage();
+  const { content, dict } = useLanguage();
 
-    const categories = [
-        {
-            title: dict.frontendStack,
-            items: content.stack?.frontend || [],
-        },
-        {
-            title: dict.backendStack,
-            items: content.stack?.backend || [],
-        },
-        {
-            title: dict.databaseStack,
-            items: content.stack?.database || [],
-        },
-        {
-            title: dict.toolsStack,
-            items: content.stack?.tools || [],
-        },
-    ];
+  const categories = [
+    {
+      title: dict.frontendStack,
+      subtitle: "Programming and quantitative tools I am building for research.",
+      items: content.stack?.frontend || [],
+      Icon: Code2,
+    },
+    {
+      title: dict.backendStack,
+      subtitle: "The main biomedical areas I want my work to point toward.",
+      items: content.stack?.backend || [],
+      Icon: Brain,
+    },
+    {
+      title: dict.databaseStack,
+      subtitle: "Coursework and self-study that support my medicine/research path.",
+      items: content.stack?.database || [],
+      Icon: BookOpen,
+    },
+    {
+      title: dict.toolsStack,
+      subtitle: "Tools, certifications, and platforms I use or manage.",
+      items: content.stack?.tools || [],
+      Icon: Wrench,
+    },
+  ];
 
-    return (
-        <section className="w-full bg-background text-foreground overflow-hidden relative py-16 md:py-24 lg:py-32 xl:py-40 2xl:py-36">
+  return (
+    <section
+      id="stack"
+      className="relative container-void overflow-hidden py-28 xl:py-40 border-t border-border/50"
+    >
+      <div className="absolute top-0 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-primary/5 blur-[140px] pointer-events-none" />
 
-            <div className="h-full flex flex-col px-container container mx-auto">
-                <div className="flex flex-col gap-4 mb-16">
-                    <BlurReveal>
-                        <span className="title-counter">[002]</span>
-                    </BlurReveal>
+      <div className="container mx-auto px-container max-w-7xl relative z-10">
+        <div className="mb-16 md:mb-20">
+          <BlurReveal>
+            <span className="title-counter">[002]</span>
+          </BlurReveal>
 
-                    <BlurReveal>
-                        <h2 className="title">{dict.stackTitle}</h2>
-                    </BlurReveal>
-                </div>
+          <BlurReveal>
+            <h2 className="title mt-4">{dict.stackTitle}</h2>
+          </BlurReveal>
 
-                <div className="flex flex-col gap-container mb-6">
-                    {categories.map((category, catIndex) => (
-                        <BlurReveal key={category.title}>
-                            <div>
-                                <div className="flex items-center gap-3 mb-6">
-                                    <span className="text-[10px] font-mono tracking-widest text-muted-foreground/40">
-                                        0{catIndex + 1}
-                                    </span>
-                                    <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground">
-                                        {category.title}
-                                    </h3>
-                                </div>
+          <BlurReveal>
+            <p className="mt-5 max-w-3xl text-lg md:text-xl text-muted-foreground leading-relaxed">
+              A cleaner view of the skills, coursework, and interests behind my
+              medicine, neuroscience, and research direction.
+            </p>
+          </BlurReveal>
+        </div>
 
-                                <div className="flex items-center gap-6 flex-wrap mb-6">
-                                    {category.items.map((item: StackItem) => (
-                                        <HoverCard key={item.name} openDelay={50} closeDelay={50}>
-                                            <HoverCardTrigger asChild>
-                                                <div className="group flex items-center gap-3 py-2.5 px-1 shrink-0 cursor-default">
-                                                    <div className="transition-all duration-500 ease-out opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110">
-                                                        <Image src={item.icon} alt={item.name} width={20} height={20} unoptimized={item.icon.endsWith('.svg')} />
-                                                    </div>
-                                                    <span className="text-sm tracking-wide text-muted-foreground transition-colors duration-500 ease-out group-hover:text-foreground">
-                                                        {item.name}
-                                                    </span>
-                                                </div>
-                                            </HoverCardTrigger>
-                                            <HoverCardContent
-                                                side="top"
-                                                align="center"
-                                                className="w-auto p-4 flex flex-col items-center justify-center gap-4 bg-background/95 backdrop-blur-xl border border-border/50 shadow-2xl rounded-2xl overflow-hidden"
-                                            >
-                                                <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent" />
-                                                <div className="absolute inset-0 bg-linear-to-tr from-foreground/5 to-transparent pointer-events-none" />
+        <div className="space-y-5 md:space-y-6">
+          {categories.map((category, catIndex) => {
+            const Icon = category.Icon;
 
-                                                <div className="relative p-3 rounded-xl bg-secondary/50 ring-1 ring-border/50 shadow-inner group-hover:scale-110 transition-transform duration-500">
-                                                    <Image src={item.icon} alt={item.name} width={36} height={36} className="drop-shadow-lg" unoptimized={item.icon.endsWith('.svg')} />
-                                                </div>
-                                                <div className="flex flex-col items-center justify-center gap-1 z-10">
-                                                    <span className="text-sm font-bold tracking-[0.15em] uppercase text-foreground">
-                                                        {item.name}
-                                                    </span>
-                                                    <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-mono">
-                                                        {category.title}
-                                                    </span>
-                                                </div>
-                                            </HoverCardContent>
-                                        </HoverCard>
-                                    ))}
-                                </div>
-                            </div>
-                        </BlurReveal>
-                    ))}
-                </div>
+            return (
+              <BlurReveal key={category.title}>
+                <section className="group border border-border/60 bg-secondary/5 backdrop-blur-md p-6 md:p-8 xl:p-10 transition-all duration-500 hover:bg-secondary/15 hover:border-border">
+                  <div className="grid grid-cols-1 xl:grid-cols-[0.6fr_1.4fr] gap-8 xl:gap-12 items-start">
+                    <div>
+                      <div className="flex items-center gap-4">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-border/60 bg-background/60">
+                          <Icon className="h-5 w-5 text-primary" />
+                        </div>
 
-            </div>
-        </section>
-    );
+                        <span className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
+                          0{catIndex + 1}
+                        </span>
+                      </div>
+
+                      <h3 className="mt-6 text-2xl md:text-3xl xl:text-4xl font-serif italic font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors duration-500">
+                        {category.title}
+                      </h3>
+
+                      <p className="mt-4 text-sm md:text-base leading-relaxed text-muted-foreground">
+                        {category.subtitle}
+                      </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {category.items.map((item: StackItem) => (
+                        <SkillPill key={item.name} name={item.name} />
+                      ))}
+                    </div>
+                  </div>
+                </section>
+              </BlurReveal>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SkillPill({ name }: { name: string }) {
+  return (
+    <div className="relative overflow-hidden rounded-full border border-border/50 bg-background/50 px-5 py-4 text-sm md:text-base font-medium text-foreground/80 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/50 hover:text-foreground hover:bg-background">
+      <span>{name}</span>
+    </div>
+  );
 }
