@@ -79,7 +79,7 @@ export default function Roadmap() {
                     </a>
 
                     <a
-                      href="/transcript.pdf"
+                      href="https://docs.google.com/document/d/1jf8SMKqzXJ1jMvl4jAzimdjGvIyOkF4xQ7l5BEmqEHM/edit?usp=sharing"
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center justify-center gap-2 rounded-full border border-border/60 bg-background/60 px-5 py-3 text-sm font-medium text-foreground transition hover:bg-secondary/30"
