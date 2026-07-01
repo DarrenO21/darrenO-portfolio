@@ -22,99 +22,101 @@
     "frontend": [
       {
         "name": "Python",
-        "icon": "/stack/python.svg",
-        "featured": true
+        "icon": ""
       },
       {
         "name": "NumPy",
-        "icon": "/stack/python.svg",
-        "featured": true
+        "icon": ""
       },
       {
         "name": "Matplotlib",
-        "icon": "/stack/python.svg",
-        "featured": true
-      },
-      {
-        "name": "Data Analysis",
-        "icon": "/stack/python.svg"
+        "icon": ""
       },
       {
         "name": "Statistics",
-        "icon": "/stack/postgresql.svg"
+        "icon": ""
       },
       {
         "name": "Data Visualization",
-        "icon": "/stack/html5.svg"
+        "icon": ""
+      },
+      {
+        "name": "Data Analysis",
+        "icon": ""
       }
     ],
     "backend": [
       {
         "name": "Neuroscience",
-        "icon": "/stack/react.svg",
-        "featured": true
+        "icon": ""
       },
       {
         "name": "Medicine",
-        "icon": "/stack/nextjs.svg",
-        "featured": true
+        "icon": ""
       },
       {
         "name": "Biomedical Science",
-        "icon": "/stack/typescript.svg",
-        "featured": true
+        "icon": ""
       },
       {
         "name": "Public Health",
-        "icon": "/stack/javascript.svg"
+        "icon": ""
       },
       {
         "name": "Developmental Medicine",
-        "icon": "/stack/nodejs.svg"
+        "icon": ""
+      },
+      {
+        "name": "Healthcare Volunteering",
+        "icon": ""
       }
     ],
     "database": [
       {
         "name": "Biology",
-        "icon": "/stack/html5.svg",
-        "featured": true
+        "icon": ""
       },
       {
-        "name": "Chemistry",
-        "icon": "/stack/css3.svg",
-        "featured": true
+        "name": "Chemistry Honors",
+        "icon": ""
       },
       {
         "name": "AP Seminar",
-        "icon": "/stack/tailwindcss.svg"
+        "icon": ""
       },
       {
-        "name": "AP Psychology",
-        "icon": "/stack/bootstrap.svg"
+        "name": "AP Psychology Self-Study",
+        "icon": ""
       },
       {
-        "name": "AP Calculus BC",
-        "icon": "/stack/framer-motion.svg"
+        "name": "AP Calculus BC Self-Study",
+        "icon": ""
+      },
+      {
+        "name": "AP Computer Science Principles",
+        "icon": ""
       }
     ],
     "tools": [
       {
-        "name": "Fusion 360",
-        "icon": "/stack/tauri.svg",
-        "featured": true
+        "name": "Fusion 360 Certification",
+        "icon": ""
       },
       {
         "name": "GitHub",
-        "icon": "/stack/git.svg",
-        "featured": true
-      },
-      {
-        "name": "Vercel",
-        "icon": "/stack/vercel.svg"
+        "icon": ""
       },
       {
         "name": "Website Management",
-        "icon": "/stack/nextjs.svg"
+        "icon": ""
+      },
+      {
+        "name": "MyIntern.net",
+        "icon": ""
+      },
+      {
+        "name": "Vercel",
+        "icon": ""
       }
     ]
   }
