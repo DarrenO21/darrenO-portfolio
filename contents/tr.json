@@ -18,104 +18,49 @@
       "id": "01",
       "year": "Relevant Coursework",
       "description": "My coursework is centered around STEM, medicine, biomedical science, and research preparation.\n\nRelevant coursework includes Biology through Mercer County Community College, Chemistry Honors, AP Seminar, Pre-Calculus Honors, AP Computer Science Principles, PLTW Introduction to Engineering Design, and dual-enrollment STEM coursework.\n\nI am also self-studying AP Psychology and AP Calculus BC, which connect directly to my interests in neuroscience, medicine, statistics, and computational research.",
-      "stack": [
-        "biology",
-        "chemistry",
-        "ap seminar",
-        "ap psychology",
-        "ap calc bc",
-        "ap csp"
-      ]
+      "stack": ["biology", "chemistry", "ap seminar", "ap psychology", "ap calc bc", "ap csp"]
     },
     {
       "id": "02",
       "year": "MCTS STEM Academy",
       "description": "Freshman year at Mercer County Technical Schools Sypek Center through the MCTS STEM Academy.\n\nFinished freshman year with a 4.44 weighted GPA and a 4.00 unweighted GPA. Took Biology, World History, Spanish I, Algebra II, AP Computer Science Principles, PLTW Introduction to Engineering Design, Physical and Health Education I, and English I.\n\nDual-enrollment credits came from Mercer County Community College and Rochester Institute of Technology. Courses included MCCC BIO113, MCCC HIS113, MCCC MAT115, MCCC DRA190, and RIT PLTW101.\n\nScored a 5 on AP Computer Science Principles.",
-      "stack": [
-        "freshman year",
-        "4.44 weighted gpa",
-        "4.00 uw gpa",
-        "mccc",
-        "rit",
-        "ap csp 5"
-      ]
+      "stack": ["freshman year", "4.44 weighted gpa", "4.00 uw gpa", "mccc", "rit", "ap csp 5"]
     },
     {
       "id": "03",
       "year": "Hopewell Valley Central High School",
       "description": "Sophomore year at Hopewell Valley Central High School.\n\nFinished sophomore year with a 4.43 weighted GPA and a 4.08 unweighted GPA. Coursework included AP Seminar, Basic Piano, Chemistry Honors, English 2 Honors, Pre-Calculus Honors, Spanish 3, US History 1 Global Honors, and Wellness 2.\n\nThis year helped strengthen my writing, chemistry foundation, math preparation, and research communication skills.",
-      "stack": [
-        "sophomore year",
-        "4.43 weighted gpa",
-        "4.08 uw gpa",
-        "ap seminar",
-        "chem honors",
-        "pre-calc honors"
-      ]
+      "stack": ["sophomore year", "4.43 weighted gpa", "4.08 uw gpa", "ap seminar", "chem honors", "pre-calc honors"]
     },
     {
       "id": "04",
       "year": "Self-Study & Certifications",
       "description": "I self-studied AP Psychology and AP Calculus BC to push beyond my school schedule and connect my interests in neuroscience, math, statistics, and biomedical research.\n\nI am also building technical skills in Python, NumPy, Matplotlib, and data analysis. These skills are part of my research direction, not just general coding.\n\nI also earned a Fusion 360 certification, connecting my STEM background to engineering design and digital modeling.",
-      "stack": [
-        "ap psychology",
-        "ap calc bc",
-        "python",
-        "numpy",
-        "matplotlib",
-        "fusion 360"
-      ]
+      "stack": ["ap psychology", "ap calc bc", "python", "numpy", "matplotlib", "fusion 360"]
     },
     {
       "id": "05",
       "year": "Biomedical & Healthcare Focus",
       "description": "I am interested in biomedical science, neuroscience, medicine, public health, and computational research.\n\nAs co-founder and Healthcare Lead for MyIntern.net, I focus primarily on healthcare-related internships and opportunities for students interested in medicine, biomedical science, and related fields.\n\nI am currently volunteering at RWJ and Capital Health during summer 2026. I have also volunteered with special needs children at Princeton Alliance Church during summer Sundays and one-week summer camps in 2024 and 2025.\n\nMy experience caring for my brother, who has autism, has made neuroscience and developmental medicine especially meaningful to me.",
-      "stack": [
-        "medicine",
-        "neuroscience",
-        "myintern.net",
-        "rwj",
-        "capital health",
-        "special needs service"
-      ]
+      "stack": ["medicine", "neuroscience", "myintern.net", "rwj", "capital health", "special needs service"]
     },
     {
       "id": "06",
       "year": "Leadership & Awards",
       "description": "I serve as Vice President of Model Congress and have been involved in Model United Nations.\n\nAt Rutgers Model UN in 2025, I won Best Position Paper in the Disarmament and International Security Committee.\n\nI also served as a Church Lay Leader at Christos Mar Thoma Church in Pennsylvania and managed the choir website during 2024-2025.",
-      "stack": [
-        "vp model congress",
-        "model un",
-        "best position paper",
-        "church leadership",
-        "website management"
-      ]
+      "stack": ["vp model congress", "model un", "best position paper", "church leadership", "website management"]
     },
     {
       "id": "07",
       "year": "Percussion & Performance",
       "description": "Music is a major part of my life, especially percussion and drum set.\n\nI was a GPYO Principal Percussionist for two years and performed at venues including Princeton Richardson Auditorium and Rutgers Mason Gross Performing Arts Center. I marched bass drum in Nottingham Marching Band, snare drum in Nottingham Indoor Percussion, and tenors at Hopewell Valley Central High School.\n\nI have played drum set and percussion at weddings, church events, Main Street Disneyland, and with Musify Philly at the First FOMAA National Women's Summit, where I was featured on Flowers TV.\n\nI also launched a drum tutoring and summer camp business and currently work with one active student.",
-      "stack": [
-        "percussion",
-        "gpyo",
-        "marching band",
-        "indoor percussion",
-        "drum set",
-        "music teaching"
-      ]
+      "stack": ["percussion", "gpyo", "marching band", "indoor percussion", "drum set", "music teaching"]
     },
     {
       "id": "08",
       "year": "Personal & Creative",
       "description": "Outside of academics, medicine, and music, I enjoy creative and hands-on hobbies.\n\nI earned a poom belt in Taekwondo under two-time national champion Master Park. I also enjoy fishing, juggling, origami, and ventriloquism.\n\nI previously created an origami and ventriloquism YouTube channel that reached 52 subscribers, with the highest-viewed video reaching 522 views.",
-      "stack": [
-        "taekwondo",
-        "fishing",
-        "juggling",
-        "origami",
-        "ventriloquism",
-        "creativity"
-      ]
+      "stack": ["taekwondo", "fishing", "juggling", "origami", "ventriloquism", "creativity"]
     }
   ]
 }
