@@ -33,6 +33,7 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen overflow-hidden bg-background flex items-center border-b border-border/50"
     >
+      <InteractiveParticles />
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-primary/10 blur-[150px]" />
         <div className="absolute bottom-[-20%] right-[-10%] h-[600px] w-[600px] rounded-full bg-primary/10 blur-[180px]" />
