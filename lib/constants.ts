@@ -1,4 +1,4 @@
 export const APP_CONFIG = {
-    NAME: "Kintarowwwards",
-    DESC: "Creative Developer Portfolio",
+    NAME: "DarrenOommen",
+    DESC: "Student Portfolio",
 } as const;
