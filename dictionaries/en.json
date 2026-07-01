@@ -7,7 +7,7 @@
     "roadmap": "Profile",
     "contact": "Contact"
   },
-  "scrollDown": "Scroll",
+  "scrollDown": "",
   "contactMe": "Contact Me",
   "exploreProjects": "View Profile",
   "aboutTitle": "About",
@@ -22,7 +22,7 @@
   "projectsScrollText": "Scroll to explore",
   "projectsEndText": "End",
   "roadmapTitle": "Profile",
-  "roadmapDescription": "Academics, relevant coursework, healthcare exposure, leadership, music, service, and personal interests.",
+  "roadmapDescription": "Relevant coursework, academics, research direction, healthcare exposure, leadership, music, service, and personal interests.",
   "contactTitle": "Contact",
   "contactIntroText": "For research, internship, healthcare, music, or collaboration opportunities.",
   "sendEmail": "Send an Email",
