@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Syne } from "next/font/google";
 import "../globals.css";
-import { MusicPlayer } from "@/components/widgets/music-player";
 import SmoothScroll from "@/providers/smooth-scroll-provider";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { LanguageProvider } from "@/providers/language-provider";
@@ -57,7 +56,6 @@ export default async function LangLayout({
             <Preloader />
             <SmoothScroll>
               <Navbar />
-              <MusicPlayer />
               {children}
             </SmoothScroll>
           </ThemeProvider>
