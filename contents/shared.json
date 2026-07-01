@@ -2,7 +2,7 @@
   "contact": {
     "location": "New Jersey, United States",
     "email": "darrengetsemail@gmail.com",
-    "phone": "609-934-2730"
+    "phone": "Email preferred"
   },
   "social": [
     {
@@ -26,17 +26,26 @@
         "featured": true
       },
       {
-        "name": "Data Analysis",
+        "name": "NumPy",
         "icon": "/stack/python.svg",
         "featured": true
       },
       {
-        "name": "NumPy",
+        "name": "Matplotlib",
+        "icon": "/stack/python.svg",
+        "featured": true
+      },
+      {
+        "name": "Data Analysis",
         "icon": "/stack/python.svg"
       },
       {
-        "name": "Matplotlib",
-        "icon": "/stack/python.svg"
+        "name": "Statistics",
+        "icon": "/stack/postgresql.svg"
+      },
+      {
+        "name": "Research Notes",
+        "icon": "/stack/html5.svg"
       }
     ],
     "backend": [
@@ -52,29 +61,48 @@
       },
       {
         "name": "Biomedical Science",
-        "icon": "/stack/typescript.svg"
+        "icon": "/stack/typescript.svg",
+        "featured": true
       },
       {
         "name": "Public Health",
         "icon": "/stack/javascript.svg"
+      },
+      {
+        "name": "Developmental Medicine",
+        "icon": "/stack/nodejs.svg"
       }
     ],
     "database": [
       {
-        "name": "Research Notes",
-        "icon": "/stack/git.svg",
+        "name": "Biology",
+        "icon": "/stack/html5.svg",
         "featured": true
       },
       {
-        "name": "Literature Review",
-        "icon": "/stack/html5.svg"
+        "name": "Chemistry",
+        "icon": "/stack/css3.svg",
+        "featured": true
       },
       {
-        "name": "Statistics",
-        "icon": "/stack/css3.svg"
+        "name": "AP Seminar",
+        "icon": "/stack/tailwindcss.svg"
+      },
+      {
+        "name": "AP Psychology",
+        "icon": "/stack/bootstrap.svg"
+      },
+      {
+        "name": "AP Calculus BC",
+        "icon": "/stack/framer-motion.svg"
       }
     ],
     "tools": [
+      {
+        "name": "Fusion 360",
+        "icon": "/stack/tauri.svg",
+        "featured": true
+      },
       {
         "name": "GitHub",
         "icon": "/stack/git.svg",
@@ -85,7 +113,7 @@
         "icon": "/stack/vercel.svg"
       },
       {
-        "name": "Web Portfolio",
+        "name": "Website Management",
         "icon": "/stack/nextjs.svg"
       }
     ]
