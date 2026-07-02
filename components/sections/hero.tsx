@@ -10,27 +10,27 @@ import { InteractiveParticles } from "@/components/effects/interactive-particles
 
 const heroPhotos = [
   {
-    src: "/hero/Darren Sketch.png",
+    src: "/Darren Sketch.png",
     position: "center 35%",
   },
   {
-    src: "/hero/IMG_0531.jpeg",
+    src: "/IMG_0531.jpeg",
     position: "center 28%",
   },
   {
-    src: "/hero/IMG_1993.jpeg",
+    src: "/IMG_1993.jpeg",
     position: "center 32%",
   },
   {
-    src: "/hero/IMG_4632.jpeg",
+    src: "/IMG_4632.jpeg",
     position: "center 25%",
   },
   {
-    src: "/hero/IMG_5115.jpeg",
+    src: "/IMG_5115.jpeg",
     position: "center 30%",
   },
   {
-    src: "/hero/hero-6.jpg",
+    src: "/hero-6.jpg",
     position: "center 30%",
   },
 ];
