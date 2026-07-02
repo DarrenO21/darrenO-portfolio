@@ -7,17 +7,36 @@ import { ArrowRight, Mail } from "lucide-react";
 import { useLanguage } from "@/providers/language-provider";
 import { ContactModal } from "@/components/modals/contact-modal";
 import { InteractiveParticles } from "@/components/effects/interactive-particles";
+
 const heroPhotos = [
-  "Darren Sketch.png",
-  "IMG_0531.jpeg",
-  "IMG_1993.jpeg",
-  "IMG_4632.jpeg",
-  "IMG_5115.jpeg",
-  "/hero/hero-6.jpg",
+  {
+    src: "/hero/Darren Sketch.png",
+    position: "center 35%",
+  },
+  {
+    src: "/hero/IMG_0531.jpeg",
+    position: "center 28%",
+  },
+  {
+    src: "/hero/IMG_1993.jpeg",
+    position: "center 32%",
+  },
+  {
+    src: "/hero/IMG_4632.jpeg",
+    position: "center 25%",
+  },
+  {
+    src: "/hero/IMG_5115.jpeg",
+    position: "center 30%",
+  },
+  {
+    src: "/hero/hero-6.jpg",
+    position: "center 30%",
+  },
 ];
 
 export default function Hero() {
-  const { content, dict } = useLanguage();
+  const { content } = useLanguage();
   const [contactOpen, setContactOpen] = useState(false);
 
   const scrollToProfile = useCallback(() => {
@@ -34,6 +53,7 @@ export default function Hero() {
       className="relative min-h-screen overflow-hidden bg-background flex items-center border-b border-border/50"
     >
       <InteractiveParticles />
+
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-primary/10 blur-[150px]" />
         <div className="absolute bottom-[-20%] right-[-10%] h-[600px] w-[600px] rounded-full bg-primary/10 blur-[180px]" />
@@ -106,12 +126,30 @@ export default function Hero() {
           >
             <div className="absolute inset-0 opacity-90">
               <div className="grid grid-cols-3 grid-rows-3 gap-3 h-full">
-                <PhotoTile src={heroPhotos[0]} className="col-span-1 row-span-1 translate-y-8" />
-                <PhotoTile src={heroPhotos[1]} className="col-span-2 row-span-1" />
-                <PhotoTile src={heroPhotos[2]} className="col-span-2 row-span-1" />
-                <PhotoTile src={heroPhotos[3]} className="col-span-1 row-span-2 -translate-y-10" />
-                <PhotoTile src={heroPhotos[4]} className="col-span-1 row-span-1 translate-y-4" />
-                <PhotoTile src={heroPhotos[5]} className="col-span-1 row-span-1" />
+                <PhotoTile
+                  photo={heroPhotos[0]}
+                  className="col-span-1 row-span-1 translate-y-8"
+                />
+                <PhotoTile
+                  photo={heroPhotos[1]}
+                  className="col-span-2 row-span-1"
+                />
+                <PhotoTile
+                  photo={heroPhotos[2]}
+                  className="col-span-2 row-span-1"
+                />
+                <PhotoTile
+                  photo={heroPhotos[3]}
+                  className="col-span-1 row-span-2 -translate-y-10"
+                />
+                <PhotoTile
+                  photo={heroPhotos[4]}
+                  className="col-span-1 row-span-1 translate-y-4"
+                />
+                <PhotoTile
+                  photo={heroPhotos[5]}
+                  className="col-span-1 row-span-1"
+                />
               </div>
             </div>
 
@@ -153,7 +191,16 @@ export default function Hero() {
   );
 }
 
-function PhotoTile({ src, className }: { src: string; className?: string }) {
+function PhotoTile({
+  photo,
+  className,
+}: {
+  photo: {
+    src: string;
+    position: string;
+  };
+  className?: string;
+}) {
   return (
     <div
       className={[
@@ -161,19 +208,15 @@ function PhotoTile({ src, className }: { src: string; className?: string }) {
         className || "",
       ].join(" ")}
     >
-      {/* Blurry background fill so empty space still looks good */}
       <div
-        className="absolute inset-0 bg-cover bg-center grayscale opacity-35 blur-md scale-110"
-        style={{ backgroundImage: `url('${src}')` }}
+        className="absolute inset-0 bg-cover grayscale opacity-80"
+        style={{
+          backgroundImage: `url("${photo.src}")`,
+          backgroundPosition: photo.position,
+        }}
       />
 
-      {/* Main image layer — shows full image without cutting your face */}
-      <div
-        className="absolute inset-0 bg-contain bg-center bg-no-repeat grayscale opacity-85"
-        style={{ backgroundImage: `url('${src}')` }}
-      />
-
-      <div className="absolute inset-0 bg-background/20" />
+      <div className="absolute inset-0 bg-background/15" />
     </div>
   );
 }
