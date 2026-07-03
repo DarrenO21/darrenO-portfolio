@@ -14,12 +14,12 @@ import {
 
 const tracks = [
   {
-    title: "Drum Practice",
+    title: "Lofi Music",
     artist: "Darren Oommen",
     src: "/music/track-1.mp3",
   },
   {
-    title: "Live Percussion",
+    title: "Drum Reps",
     artist: "Darren Oommen",
     src: "/music/track-2.mp3",
   },
